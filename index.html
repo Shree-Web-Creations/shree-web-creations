@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Web Creations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(120deg, #4caf50, #81c784);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .projects, .about, .contact {
+      margin-bottom: 2rem;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .project-card {
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact input,
+    .contact textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shree Web Creations</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Empowering Businesses with Beautiful Websites</h2>
+    <p>Affordable. Fast. Custom Web Solutions for Every Business.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Our Services</h3>
+    <p>We offer website design, development, maintenance, and SEO for small businesses and startups.</p>
+  </section>
+
+  <section class="section projects" id="projects">
+    <h3>Our Projects</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>GreenLand Nursery</h4>
+        <p>Plant nursery website for product showcase and orders.</p>
+      </div>
+      <div class="project-card">
+        <h4>Grameen Bazaar</h4>
+        <p>A local market web portal built for farmers and merchants.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h3>About Us</h3>
+    <p>We are a young and passionate web development team building modern, responsive websites that bring businesses online.</p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h3>Contact Us</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shree Web Creations. All rights reserved.</p>
+  </footer>
+</body>
+</html>
